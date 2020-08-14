@@ -1,0 +1,178 @@
+:root {
+    --color1: ;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+.logo {
+    width: 10rem;
+    height: 10rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: auto 15rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: rgb(98, 177, 59);
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+
+.navbar li a:hover {
+    background-color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50rem;
+    /* height: 35rem; */
+    /* border: 1px solid #ccc; */
+    border-radius: .5rem;
+
+}
+
+.title {
+    font-size: 2.6rem;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.form input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 90%;
+    padding: 1rem 2rem;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    color: rgb(155, 140, 140);
+    transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -ms-transition: .5s ease-out;
+    outline: none;
+    -o-transition: .5s ease-out;
+}
+
+.form input:focus {
+    border: 1px solid green;
+    color: black;
+}
+
+
+.form label {
+    font-size: 1.8rem;
+    margin: 1rem auto 0.5rem auto;
+}
+
+.btn {
+    display: block;
+    padding: 1rem 5rem;
+    border-radius: .5rem;
+    background-color: rgb(29, 121, 90);
+    border: 1px solid rgb(29, 121, 90);
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: #fff;
+    margin: 1rem auto;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+
+.btn:hover {
+    color: rgb(29, 121, 90);
+    background-color: #fff;
+}
+
+.oculto {
+    display: none !important;
+}
+
+.error {
+    color: red;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    max-width: 100rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.center {
+    display: block;
+    margin: 2rem auto;
+}
+
+.card {
+    border: 1px solid #ccc;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+    text-align: center;
+    margin: 2rem;
+    font-size: 2.6rem;
+}
+
+.btn-left {
+    margin: 0 auto;
+    width: 50%;
+    grid-column: 2/3;
+}
+
+.card p {
+    text-align: justify;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
