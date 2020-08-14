@@ -47,7 +47,7 @@ const sendData = async (e) => {
         passwordConfirm
     }
 
-    const res = await fetch("http://localhost:3000/blogs/register", {
+    const res = await fetch("/blogs/register", {
         method: "POST",
         mode: "cors",
         headers: {
@@ -85,7 +85,7 @@ const send = async e => {
         password
     }
 
-    const res = await fetch("http://localhost:3000/blogs/login", {
+    const res = await fetch("/blogs/login", {
         method: "POST",
         mode: "cors",
         headers: {
